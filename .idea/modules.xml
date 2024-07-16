@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CollectionLearning/CollectionLearning.iml" filepath="$PROJECT_DIR$/CollectionLearning/CollectionLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise/Exercise.iml" filepath="$PROJECT_DIR$/Exercise/Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectOrientedAdvance/ObjectOrientedAdvance.iml" filepath="$PROJECT_DIR$/ObjectOrientedAdvance/ObjectOrientedAdvance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectOrientedCases/ObjectOrientedCases.iml" filepath="$PROJECT_DIR$/ObjectOrientedCases/ObjectOrientedCases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringLearning/StringLearning.iml" filepath="$PROJECT_DIR$/StringLearning/StringLearning.iml" />
+    </modules>
+  </component>
+</project>
