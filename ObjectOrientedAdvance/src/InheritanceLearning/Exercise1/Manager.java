@@ -1,7 +1,7 @@
 package InheritanceLearning.Exercise1;
 
 public class Manager extends Staff{
-    double bonus;
+    private double bonus;
 
     public Manager() {
 
@@ -15,5 +15,13 @@ public class Manager extends Staff{
     @Override
     public void work() {
         System.out.println("管理其他人");
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
     }
 }
