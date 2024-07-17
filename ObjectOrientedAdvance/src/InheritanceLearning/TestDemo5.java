@@ -37,10 +37,12 @@ class InternationalStudent extends Person {
         super.drink();
     }
 
+    @Override
     public void eat() {
         System.out.println("吃意大利面");
     }
 
+    @Override
     public void drink() {
         System.out.println("喝高端矿泉水");
     }
