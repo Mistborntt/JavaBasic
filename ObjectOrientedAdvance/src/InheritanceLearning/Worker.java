@@ -7,7 +7,7 @@ public class Worker extends Human {
         super();
     }
 
-    public Worker(String name, int age) {
-        super(name, age);
+    public Worker(String name, int age, String university) {
+        super(name, age, university);
     }
 }
