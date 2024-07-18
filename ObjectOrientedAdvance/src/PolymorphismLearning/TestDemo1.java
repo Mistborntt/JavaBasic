@@ -1,6 +1,6 @@
 package PolymorphismLearning;
 
-public class Demo {
+public class TestDemo1 {
     public static void main(String[] args) {
         // 创建三个对象，并调用register方法
         Student s = new Student();
