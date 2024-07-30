@@ -7,10 +7,13 @@ public class TestDemo2 {
         Animal cat = new Cat();
 
         // 调用成员变量：编译看左边，运行也看左边
+        // 编译看左边：javac编译代码的时候，会看左边的父类中有没有这个变量，如果有，编译成功；如果没有，编译失败
+        // 运行也看左边：java运行代码的时候，实际获取的就是左边父类中成员变量的值
         System.out.println(dog.name);
         System.out.println(cat.name);
 
         // 调用成员方法：编译看左边，运行看右边
+        //
         dog.show();
         cat.show();
     }
