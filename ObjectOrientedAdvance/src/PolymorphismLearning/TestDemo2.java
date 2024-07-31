@@ -22,11 +22,13 @@ public class TestDemo2 {
 
         // 多态的弊端：不能调用子类的特有功能
         // 解决方案：变回子类类型就可以了
-        Dog d = (Dog)dog;
-        Cat c = (Cat)cat;
-
-        d.eat();
-        c.eat();
+        if (dog instanceof Dog) {
+            Dog d = (Dog) dog;
+            d.eat();
+        } else {
+            Cat d = (Cat) dog;
+            d.eat();
+        }
     }
 }
 
