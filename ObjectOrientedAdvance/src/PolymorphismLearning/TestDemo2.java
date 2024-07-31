@@ -13,7 +13,8 @@ public class TestDemo2 {
         System.out.println(cat.name);
 
         // 调用成员方法：编译看左边，运行看右边
-        //
+        // 编译看左边：javac编译代码的时候，会看左边的父类中有没有这个方法，如果有，编译成功；如果没有，编译失败
+        // 运行看右边：java运行代码的时候，实际上运行的是子类中的方法
         dog.show();
         cat.show();
     }
