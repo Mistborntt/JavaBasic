@@ -3,6 +3,8 @@ package PolymorphismLearning;
 public class TestDemo2 {
     public static void main(String[] args) {
         // 创建对象（多态方式）
+        // 成员变量：在子类的对象中，会把父类的成员变量也继承下的
+        // 成员方法：如果子类对方法进行了重写，那么在虚方法表中是会把父类的方法进行覆盖的
         Animal dog = new Dog();
         Animal cat = new Cat();
 
@@ -18,8 +20,13 @@ public class TestDemo2 {
         dog.show();
         cat.show();
 
-        // 成员变量：在子类的对象中，会把父类的成员变量也继承下的
-        // 成员方法：如果子类对方法进行了重写，那么在虚方法表中是会把父类的方法进行覆盖的
+        // 多态的弊端：不能调用子类的特有功能
+        // 解决方案：变回子类类型就可以了
+        Dog d = (Dog)dog;
+        Cat c = (Cat)cat;
+
+        d.eat();
+        c.eat();
     }
 }
 
@@ -38,6 +45,10 @@ class Dog extends Animal {
     public void show() {
         System.out.println("Dog --- show方法");
     }
+
+    public void eat() {
+        System.out.println("狗吃骨头");
+    }
 }
 
 class Cat extends Animal {
@@ -46,5 +57,9 @@ class Cat extends Animal {
     @Override
     public void show() {
         System.out.println("Cat --- show方法");
+    }
+
+    public void eat() {
+        System.out.println("猫吃鱼");
     }
 }
