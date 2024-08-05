@@ -22,12 +22,13 @@ public class TestDemo2 {
 
         // 多态的弊端：不能调用子类的特有功能
         // 解决方案：变回子类类型就可以了
-        if (dog instanceof Dog) {
-            Dog d = (Dog) dog;
+        // 先判断dog是否为Dog类型，如果是，则强转成Dog类型，转换之后变量名为d；如果不是，则不强转，结果直接是false
+        if (dog instanceof Dog d) {
             d.eat();
+        } else if (dog instanceof Cat c) {
+            c.eat();
         } else {
-            Cat d = (Cat) dog;
-            d.eat();
+            System.out.println("没有这个类型，无法转换");
         }
     }
 }
